@@ -1,0 +1,117 @@
+.section-5 {
+    font-family: var(--font-poppins);
+    background-color: black;
+    padding: 2rem 8rem;
+    color: white;
+}
+.section-5, .heading, .subheading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading {
+    gap: 4rem;
+}
+.subheading {
+    gap: 0.5rem;
+    text-align: center;
+}
+.subheading span {
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 21px;
+    color: var(--color-light-pink)
+}
+.subheading h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 60px;
+}
+.subheading p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 27px;
+    opacity: 0.8;
+}
+.genres-container {
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+.genres-container a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem 3rem;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+.genres-container a:hover {
+    background-color: var(--color-orange);
+    border: 2px solid var(--color-orange);
+}
+.album-container {
+    margin-top: 4rem;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.album-top, .album-bottom {
+    gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.album-card {
+    position: relative;
+}
+.album-content {
+    width: 100%;
+    gap: 2rem;
+    bottom: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.album-title h3 {
+    font-weight: 600;
+    font-size: 0.95rem;
+    line-height: 24px;
+}
+.album-title p {
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 184.5%;
+}
+.play-icon img:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+    .genres-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+    .album-top, .album-bottom {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .section-5 {
+        padding: 4rem 2rem;
+    }
+    .genres-container {
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .album-top, .album-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+}

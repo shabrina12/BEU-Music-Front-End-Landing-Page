@@ -1,0 +1,39 @@
+.section-1 {
+    gap: 9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 8rem;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .section-1 {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section-1 {
+        margin: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+    .img-container img {
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section-1 {
+        gap: 1rem;
+        margin: 0 2rem 2rem 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .img-container img {
+        width: 70%;
+    }
+}

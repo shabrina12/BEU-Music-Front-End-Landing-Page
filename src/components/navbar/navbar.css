@@ -1,0 +1,95 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-poppins);
+}
+nav h1 {
+    font-family: var(--font-playfair);
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 35px;
+}
+.nav-links, .navbar-smallscreen_links {
+    list-style: none;
+    display: flex;
+}
+.nav-links {
+    flex-direction: row;
+    gap: 2rem;
+}
+.navbar-smallscreen_links {
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+nav a, .navbar-smallscreen_links a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 21px;
+    color: black;
+}
+nav a:hover, .navbar-smallscreen_links a:hover {
+    color: var(--color-pink);
+}
+.getStarted-btn-big, .getStarted-btn-small {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 21px;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.getStarted-btn-big:hover, .getStarted-btn-small:hover {
+    background-color: var(--color-pink);
+    border: 1px solid var(--color-pink);
+    color: white;
+} 
+
+/*-----------------NAVBAR SMALL SCREEN-------------*/
+.navbar-smallscreen {
+    display: none;
+}
+.navbar-smallscreen_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background: white;
+    transition: 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.navbar-smallscreen_overlay h1, 
+.navbar-smallscreen_overlay .close_icon {
+    top: 40px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    position: absolute;
+}
+.navbar-smallscreen_overlay h1 {
+    left: 50px;
+}
+.navbar-smallscreen_overlay .close_icon {
+    right: 50px;
+}
+
+
+@media screen and (max-width: 500px) {
+    nav {
+        justify-content: space-between;
+    }
+    .nav-links, .getStarted-btn-big {
+        display: none;
+    }
+    .navbar-smallscreen {
+        display: flex;
+    }
+}

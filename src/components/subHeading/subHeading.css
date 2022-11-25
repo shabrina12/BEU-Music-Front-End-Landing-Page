@@ -1,0 +1,23 @@
+.subHeading {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-poppins); 
+}
+.subTitle {
+    color: var(--color-orange);
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 21px;
+}
+.title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 60px;
+}
+.text {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 24px;
+    opacity: 0.6;
+}

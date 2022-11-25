@@ -1,0 +1,36 @@
+.section-4 {
+    margin: 8rem;
+    gap: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.subHeading-4 {
+    display: flex;
+    flex-direction: column;
+}
+.subHeading-4 p {
+    width: 90%;
+}
+.section-4 .img-container {
+    width: 100%;
+    height: 100%;
+}
+.section-4 .img-container img {
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 900px) {
+    .section-4 {
+        margin: 4rem;
+        gap: 2rem;
+        flex-direction: column;
+        text-align: left;
+    }
+}
+@media screen and (max-width: 500px) {
+    .section-4 {
+        margin: 4rem 2rem;
+    }
+}

@@ -1,0 +1,31 @@
+.section-8 {
+    margin: 8rem;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-poppins);
+}
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+.rating-container p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    color: var(--color-text);
+}
+
+@media screen and (max-width: 500px) {
+    .section-8 {
+        margin: 4rem 2rem;
+        gap: 3rem;
+    }
+    .icon-container {
+        gap: 1rem;
+    }
+}
