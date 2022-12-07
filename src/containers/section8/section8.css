@@ -13,6 +13,9 @@
     flex-direction: row;
     gap: 4rem;
 }
+.icon-container img {
+    cursor: pointer;
+}
 .rating-container p {
     font-weight: 500;
     font-size: 1rem;

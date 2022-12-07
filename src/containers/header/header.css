@@ -51,6 +51,7 @@ header {
     margin-right: 2rem;
     padding: 0.5rem 2rem;
     border-radius: 30px;
+    cursor: pointer;
     border: 1px solid black;
 }
 .header-image img {

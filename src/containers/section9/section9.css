@@ -46,6 +46,7 @@
     padding: 1rem 0.5rem;
     width: 30%;
     color: white;
+    cursor: pointer;
     background: var(--color-orange);
 }
 

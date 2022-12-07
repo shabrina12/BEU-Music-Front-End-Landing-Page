@@ -30,6 +30,7 @@
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 146.5%;
+    cursor: pointer;
 }
 .blog-card p {
     font-weight: 400;

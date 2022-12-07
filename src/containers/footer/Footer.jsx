@@ -24,9 +24,9 @@ const Footer = () => {
                 <h1>BEU.</h1>
                 <p>The world’s largest streaming service</p>
                 <div className='icons-container'>
-                    <FaFacebookSquare size={27} />
-                    <FaTwitterSquare size={27} />
-                    <FaLinkedin size={27} /> 
+                    <FaFacebookSquare size={27} style={{cursor: 'pointer'}} />
+                    <FaTwitterSquare size={27} style={{cursor: 'pointer'}} />
+                    <FaLinkedin size={27} style={{cursor: 'pointer'}} /> 
                 </div>
             </div>
 
