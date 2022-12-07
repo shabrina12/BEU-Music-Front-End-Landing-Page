@@ -1,9 +1,27 @@
 import React from 'react';
-import Album from '../../components/albumCard/Album';
-import { hits1, hits2, hits3, hits4, hits5, hits6, hits7, hits8, playIcon } from '../../images';
+import AlbumData from '../../containers/section5/AlbumData';
+import { playIcon } from '../../images';
 import './section5.css';
 
 const Section5 = () => {
+
+    const Album = AlbumData.map(item => {
+    return (
+        <div className='album-card' key={item.id}>
+            <img src={item.albumCover} alt='album cover' />
+            <div className='album-content'>
+                <div className='album-title'>
+                    <h3>{item.albumTitle}</h3>
+                    <p>{item.albumSinger}</p>
+                </div>
+                <div className='play-icon'>
+                    <img src={playIcon} alt='play' />
+                </div>
+            </div>
+        </div>
+    )
+    })
+
   return (
     <section className='section-5'>
         <div className='heading'>
@@ -22,19 +40,7 @@ const Section5 = () => {
         </div>
 
         <div className='album-container'>
-            <div className='album-top'>
-                <Album albumCover={hits1} albumTitle='Blinding Lights' albumSinger='The weekend' />
-                <Album albumCover={hits2} albumTitle='Watermelon Sugar' albumSinger='Harry Styles' />
-                <Album albumCover={hits3} albumTitle='Yummy' albumSinger='Justin Bieber' />
-                <Album albumCover={hits4} albumTitle='Positions' albumSinger='Ariana Grande' />
-            </div>
-
-            <div className='album-bottom'>
-                <Album albumCover={hits5} albumTitle='Lonely' albumSinger='Imagine Dragons' />
-                <Album albumCover={hits6} albumTitle='Always Love You' albumSinger='Elton John' />
-                <Album albumCover={hits7} albumTitle='Easy On Me' albumSinger='Adele' />
-                <Album albumCover={hits8} albumTitle='Tides' albumSinger='Ed Sheeran' />
-            </div>
+            {Album}
         </div>
     </section>
   )
