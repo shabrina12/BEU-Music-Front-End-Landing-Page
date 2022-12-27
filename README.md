@@ -23,7 +23,7 @@ This project is a single page web front end for Learn It using the React JS fram
 - Build out the project to the designs provided
 
 ### Screenshot
-![Design overview for BEU Music landing page](./src/images/overview.png)
+![Design overview for BEU Music landing page](./src/images/header-beu.png)
 
 ### Links
 - [Live Site URL](https://glowing-tarsier-b071f1.netlify.app/)
