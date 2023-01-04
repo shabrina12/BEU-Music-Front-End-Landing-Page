@@ -44,15 +44,26 @@ This project is a single page front end web for BEU Music build with React JS fr
 
 ### What I learned
 
-I learned how to use react hooks for filtering based on album genres
-
+I learned how to implement a filter function using react hooks to filter albums based on genres
+![Album filtering based on genres](./src/images/album-genre.png)
 Code snippets, see below:
 ```js
-const settings = {
+const allGenres = ['All Genre', ...new Set(AlbumData.map(album => album.genre))];
 
-    };
+ const [genreMenu, setGenreMenu] = useState(AlbumData);
+ const [buttons, setButtons] = useState(allGenres);
+  
+  const filter = (button) =>{
+    if(button === 'All Genre'){
+      setGenreMenu(AlbumData);
+        return;
+    }
+    const filteredData = AlbumData.filter(album => album.genre ===  button);
+    setGenreMenu(filteredData)
+}
 ```
-![Album filtering based on genres](./src/images/album-genre.png)
+The following screenshot is an example of displaying albums based on pop genre
+![Filter pop music](./src/images/album-filter-genre.png)
 
 
 ### Continued development
